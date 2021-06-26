@@ -91,6 +91,8 @@
             :pt="`Desenvolver<br>a Aplicação`"
           ></SectionCover>
           <GolangApp :lang="lang"></GolangApp> 
+          <GolangAppCodeFront :lang="lang"></GolangAppCodeFront> 
+          <GolangAppCodeBack :lang="lang"></GolangAppCodeBack> 
           <GolangAppFeatures :lang="lang"></GolangAppFeatures> 
 
           <!-- image of the app  -->
@@ -162,6 +164,8 @@ import ReversingCodeResult from '@/components/Slides/ReversingCodeResult'
 import ReversingFileRegionDiscovery from '@/components/Slides/ReversingFileRegionDiscovery'
 
 import GolangApp from '@/components/Slides/GolangApp'
+import GolangAppCodeFront from '@/components/Slides/GolangAppCodeFront'
+import GolangAppCodeBack from '@/components/Slides/GolangAppCodeBack'
 import GolangAppFeatures from '@/components/Slides/GolangAppFeatures'
 
 import UsefulLinks from '@/components/Slides/UsefulLinks'
@@ -195,6 +199,8 @@ export default {
     ReversingFileRegionDiscovery,
 
     GolangApp,
+    GolangAppCodeFront,
+    GolangAppCodeBack,
     GolangAppFeatures,
 
     UsefulLinks,
