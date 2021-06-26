@@ -3,10 +3,10 @@
         <h2 v-html="translations[lang].title"></h2>
         <p v-html="translations[lang].subtitle"></p>
         <ul>
-          <li class="fragment" v-html="translations[lang].li1"></li>
-          <li class="fragment" v-html="translations[lang].li2"></li>
-          <li class="fragment" v-html="translations[lang].li3"></li>
-          <li class="fragment" v-html="translations[lang].li4"></li>
+          <li class="fragment fade-in-then-semi-out" v-html="translations[lang].li1"></li>
+          <li class="fragment fade-in-then-semi-out" v-html="translations[lang].li2"></li>
+          <li class="fragment fade-in-then-semi-out" v-html="translations[lang].li3"></li>
+          <li class="fragment fade-in-then-semi-out" v-html="translations[lang].li4"></li>
         </ul>
         <p class="fragment" v-html="translations[lang].gotcha"></p>
     </section>

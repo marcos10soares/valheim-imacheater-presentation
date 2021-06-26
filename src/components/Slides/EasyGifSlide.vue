@@ -1,7 +1,7 @@
 <template>
     <section :data-background-image="require('../../assets/img/gifs/easy.gif')" >
-        <h1 style="color: white" v-html="translations[lang].title"></h1>
-        <p style="color: white" v-html="translations[lang].subtitle"></p>
+        <h1 class="r-fit-text text-white-w-shadow" v-html="translations[lang].title"></h1>
+        <p class="r-fit-text text-white-w-shadow" v-html="translations[lang].subtitle"></p>
 
     </section>
 </template>
