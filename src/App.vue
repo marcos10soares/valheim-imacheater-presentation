@@ -1,47 +1,72 @@
 <template>
-  <div class="reveal" id="app">
-    <div class="slides">
-      <section>{{ message }}</section>
-      <section 
-        data-background-video="https://static.slid.es/site/homepage/v1/homepage-video-editor.mp4" 
-        data-background-video-loop data-background-video-muted>Slide 2</section>
-      <section 
-        :data-background-image="require('./assets/iconfinder_811462_mark_question_information_sign_icon_128px.png')" 
-        data-background-size="100px" 
-        data-background-repeat="repeat"
-        >
-          <h1>Hello World</h1>
-          <p class="fragment">Fade in</p>
-          <p class="fragment fade-out">Fade out</p>
-          <p class="fragment highlight-red">Highlight red</p>
-          <p class="fragment fade-in-then-out">Fade in, then out</p>
-          <p class="fragment fade-up">Slide up while fading in</p>
-      </section>
-      <Slide1 ></Slide1>
-      <Slide2 ></Slide2>
+    <div class="reveal" id="app">
+      <div class="langselect">
+        <a @click="langSelect('en')">en</a> | 
+        <a @click="langSelect('pt')">pt</a>
+      </div>
+      <div class="slides">
+        <Cover :lang="lang"></Cover>
+        <WhatIsValheim :lang="lang"></WhatIsValheim>
+        <PersonalMotivation :lang="lang"></PersonalMotivation>
+        <Motivation :lang="lang"></Motivation>
+        <OptionsToEaseTheGrind :lang="lang"></OptionsToEaseTheGrind>
+        <section>
+          <OfficialConsoleCheatTool :lang="lang"></OfficialConsoleCheatTool>
+          <OfficialConsoleCommands :lang="lang"></OfficialConsoleCommands>
+        </section>
+        <UnofficialCheatTool :lang="lang"></UnofficialCheatTool>
+        <Research :lang="lang"></Research>
+        <EasyGifSlide :lang="lang"></EasyGifSlide>
+        <CharacterSaveGameFile :lang="lang"></CharacterSaveGameFile>
+        <OmgItsBinaryGifSlide :lang="lang"></OmgItsBinaryGifSlide>
+      </div>
     </div>
-
-  </div>
 </template>
 
 <script>
 import Reveal from 'reveal.js/js/reveal'
-import Slide1 from '@/components/Slide1'
-import Slide2 from '@/components/Slide2'
+import Cover from '@/components/Slides/Cover'
+import WhatIsValheim from '@/components/Slides/WhatIsValheim'
+import PersonalMotivation from '@/components/Slides/PersonalMotivation'
+import Motivation from '@/components/Slides/Motivation'
+import OptionsToEaseTheGrind from '@/components/Slides/OptionsToEaseTheGrind'
+import OfficialConsoleCheatTool from '@/components/Slides/OfficialConsoleCheatTool'
+import OfficialConsoleCommands from '@/components/Slides/OfficialConsoleCommands'
+import UnofficialCheatTool from '@/components/Slides/UnofficialCheatTool'
+import Research from '@/components/Slides/Research'
+
+import EasyGifSlide from '@/components/Slides/EasyGifSlide'
+import CharacterSaveGameFile from '@/components/Slides/CharacterSaveGameFile'
+import OmgItsBinaryGifSlide from '@/components/Slides/OmgItsBinaryGifSlide'
 
 export default {
   name: 'App',
   components: {
-    Slide1,
-    Slide2
+    Cover,
+    WhatIsValheim,
+    PersonalMotivation,
+    Motivation,
+    OfficialConsoleCheatTool,
+    OptionsToEaseTheGrind,
+    OfficialConsoleCommands,
+    UnofficialCheatTool,
+    Research,
+    CharacterSaveGameFile,
+    EasyGifSlide,
+    OmgItsBinaryGifSlide,
   },
   data() {
     return {
-      message: 'Hello Vue!'
+      lang: 'en'
     }
   },
   mounted() {
     Reveal.initialize()
+  },
+  methods: {
+    langSelect(language){
+      this.lang = language
+    }
   },
 }
 </script>
@@ -49,12 +74,5 @@ export default {
 <style>
 @import url('../node_modules/reveal.js/css/reveal.css');
 @import url('../node_modules/reveal.js/css/theme/white.css');
-/* #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-} */
+@import './assets/css/main.css';
 </style>
