@@ -37,7 +37,7 @@ export default {
                         url: `https://www.youtube.com/watch?v=LLhJQRQLTpc`,
                     },
                     {
-                        name: `My Personal Website`,
+                        name: `marcossoares.pt`,
                         url: `https://marcossoares.pt/`,
                     },
                 ]

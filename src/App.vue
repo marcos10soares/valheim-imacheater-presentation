@@ -16,7 +16,7 @@
             :en="`Motivation`" 
             :pt="`Motivação`"
           ></SectionCover>
-          <PersonalMotivation :lang="lang"></PersonalMotivation>
+          <PersonalMotivationAlternative :lang="lang"></PersonalMotivationAlternative>
           <Motivation :lang="lang"></Motivation>
         </section>
 
@@ -42,7 +42,7 @@
           <SectionCover 
             :lang="lang"
             :en="`Reversing<br>the Character File`" 
-            :pt="`<i>Reverse Engineering</i><br>o Ficheiro do Personagem`"
+            :pt="`<i>Reverse Engineering</i><br>do Ficheiro do Personagem`"
           ></SectionCover>
           <ReversingLoadingFile :lang="lang"></ReversingLoadingFile>
           <SubSectionCover 
@@ -54,7 +54,7 @@
             :lang="lang"
             :title_en="`Trial and Error`" 
             :desc_en="`The first approach was to directly modify the file, by changing items names and to check the result. This led to a number of bugs.`"
-            :title_pt="`Tentativa e Error`"
+            :title_pt="`Tentativa e Erro`"
             :desc_pt="`A primeira abordagem foi tentar modificar o ficheiro directamente, alterando os nomes dos itens e verificando o resultado. Isto levou a inúmeros bugs.`"
           ></SimpleTitleDescriptionSlide>
           <section>
@@ -147,7 +147,7 @@
 import Reveal from 'reveal.js/js/reveal'
 import Cover from '@/components/Slides/Cover'
 import WhatIsValheim from '@/components/Slides/WhatIsValheim'
-import PersonalMotivation from '@/components/Slides/PersonalMotivation'
+import PersonalMotivationAlternative from '@/components/Slides/PersonalMotivationAlternative'
 import Motivation from '@/components/Slides/Motivation'
 import OptionsToEaseTheGrind from '@/components/Slides/OptionsToEaseTheGrind'
 import OfficialConsoleCheatTool from '@/components/Slides/OfficialConsoleCheatTool'
@@ -181,7 +181,7 @@ export default {
     Cover,
     WhatIsValheim,
 
-    PersonalMotivation,
+    PersonalMotivationAlternative,
     Motivation,
 
     OfficialConsoleCheatTool,

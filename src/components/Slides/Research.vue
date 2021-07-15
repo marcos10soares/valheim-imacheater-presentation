@@ -26,7 +26,7 @@ export default {
           li1: `Looking for in-game exploits, as in actions a player could do that would lead to unwanted results by the game developers`,
           li2: `Modifying game files`,
           li3: `Modifying server requests`,
-          li4: `Modifying ram values, using cheat engine (not recommended)`,
+          li4: `Modifying ram values, using cheat engine (some risks associated)`,
           gotcha: `<b>Decided to use the character game file!</b>`,
         },
         pt: {
@@ -35,7 +35,7 @@ export default {
           li1: `Procurar por <i>in-game exploits</i>, no sentido de acções que permitam obter resultados não desejados pelos criadores do jogo`,
           li2: `Modificar ficheiros do jogo`,
           li3: `Modificar pedidos ao servidor`,
-          li4: `Modificar valores da ram (utilizando o CheatEngine - não recomendado)`,
+          li4: `Modificar valores da ram (utilizando o CheatEngine - alguns riscos)`,
           gotcha: `<b>Decidi utilizar o <i>savegame</i>(ficheiro) da personagem!</b>`,
         }
       }
